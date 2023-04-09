@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { ExampleComponent } from 'react-rating-emoji'
+import { RatingComponent } from 'react-rating-emoji'
 import 'react-rating-emoji/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [rating, setRating] = useState(0);
+
+  const handleRating = (newRating) => {
+    setRating(newRating);
+  }
+
+  return <RatingComponent rating={rating} onClick={handleRating} />
 }
 
 export default App
