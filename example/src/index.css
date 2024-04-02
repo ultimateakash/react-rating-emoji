@@ -20,3 +20,7 @@ body {
   flex-direction: column;
   background: #F9F9FC;
 }
+
+#emoji-container li:not(:last-child) {
+  margin-right: 10px;
+}
