@@ -6,12 +6,13 @@ import styles from './styles.module.css'
  * @param {Number} args.rating
  * @param {Function} args.onClick
  * @param {String} [args.className]
+ * @param {String} [args.id]
  */
-export const RatingComponent = ({ rating, onClick, className }) => {
+export const RatingComponent = ({ rating, onClick, className, id='emoji-container' }) => {
   return (
     <React.Fragment>
-      <ul className={`${styles.feedback} ${className || ''}`}>
-        <li className={`${styles.angry} ${rating == 1 ? styles.active : ''}`} onClick={() => onClick(1)}>
+      <ul className={`${styles.feedback} ${className || ''}`} id={id}>
+        <li className={`${styles.angry} ${rating == 1 ? styles.active : ''}`} onClick={() => onClick(1)} id='angry-emoji'>
           <div>
             <svg className={styles.eye}>
               <use xlinkHref={`#${styles.eye}`} />
@@ -24,7 +25,7 @@ export const RatingComponent = ({ rating, onClick, className }) => {
             </svg>
           </div>
         </li>
-        <li className={`${styles.sad} ${rating == 2 ? styles.active : ''}`} onClick={() => onClick(2)}>
+        <li className={`${styles.sad} ${rating == 2 ? styles.active : ''}`} onClick={() => onClick(2)} id='sad-emoji'>
           <div>
             <svg className={styles.eye}>
               <use xlinkHref={`#${styles.eye}`} />
@@ -37,10 +38,10 @@ export const RatingComponent = ({ rating, onClick, className }) => {
             </svg>
           </div>
         </li>
-        <li className={`${styles.ok} ${rating == 3 ? styles.active : ''}`} onClick={() => onClick(3)}>
+        <li className={`${styles.ok} ${rating == 3 ? styles.active : ''}`} onClick={() => onClick(3)} id='ok-emoji'>
           <div></div>
         </li>
-        <li className={`${styles.good} ${rating == 4 ? styles.active : ''}`} onClick={() => onClick(4)}>
+        <li className={`${styles.good} ${rating == 4 ? styles.active : ''}`} onClick={() => onClick(4)} id='good-emoji'>
           <div>
             <svg className={styles.eye}>
               <use xlinkHref={`#${styles.eye}`} />
@@ -53,7 +54,7 @@ export const RatingComponent = ({ rating, onClick, className }) => {
             </svg>
           </div>
         </li>
-        <li className={`${styles.happy} ${rating == 5 ? styles.active : ''}`} onClick={() => onClick(5)}>
+        <li className={`${styles.happy} ${rating == 5 ? styles.active : ''}`} onClick={() => onClick(5)} id='happy-emoji'>
           <div>
             <svg className={styles.eye}>
               <use xlinkHref={`#${styles.eye}`} />
