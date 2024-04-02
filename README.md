@@ -39,6 +39,7 @@ export default App
 | rating | `number` |  0 | no | current rating
 | onClick  | `event` |   | no | event handler `(rating)`
 | className  | `string` |   | no | container class name
+| id  | `string` | emoji-container  | no | container id name
 ## License
 
 MIT © [https://github.com/ultimateakash](https://github.com/https://github.com/ultimateakash)
