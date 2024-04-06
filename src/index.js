@@ -1,13 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-/**
- * @param {Object} args
- * @param {Number} args.rating
- * @param {Function} args.onClick
- * @param {String} [args.className]
- * @param {String} [args.id]
- */
 export const RatingComponent = ({ rating, onClick, className, id='emoji-container' }) => {
   return (
     <React.Fragment>
