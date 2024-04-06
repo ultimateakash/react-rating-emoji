@@ -1,6 +1,6 @@
 {
   "name": "react-rating-emoji",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "animated emoji rating component",
   "author": "https://github.com/ultimateakash",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=10"
   },
